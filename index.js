@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 
+// app.use(middleman);
+
 
 app.get("/products",(req, res )=>{
     console.log("get request incoming");
