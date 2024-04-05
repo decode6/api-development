@@ -9,6 +9,15 @@ app.get("/products",(req, res )=>{
     res.send({message: "Get request Successfull"})
 })
 
+//post request 
+
+app.post("/products",(req, res )=>{
+
+    console.log(req.params.id);
+    res.send({message: "post working"});
+})
+
+
 //id variable
 
 app.get("/users/:id",(req, res )=>{
