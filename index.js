@@ -15,6 +15,24 @@ app.post("/products", (req, res) => {
   res.send({ message: "post working" });
 });
 
+//delete request
+
+app.delete("/products/:id", (req, res) => {
+console.log(req.params.id);
+res.send({ message: "Delete Successfull"});
+})
+
+//put request
+
+app.put("/products/:id", (req, res) =>{
+    console.log(req.params.id);
+    console.log(req.body);
+    res.send({ message:"put successful"});
+
+});
+
+
+
 //id variable
 
 app.get("/users/:id", (req, res) => {
